@@ -63,19 +63,19 @@ class BoidApp(ShowBase):
 
 
 if __name__ == "__main__":
-    bound_min = np.array([-40, -40, -40])
-    bound_max = np.array([40, 40, 40])
-    perception_radius = 5
-    separation_radius = 2
+    bound_min = np.array([-60, -60, -60])
+    bound_max = np.array([60, 60, 60])
+    perception_radius = 15
+    separation_radius = 1
     max_speed = 10
     min_speed = 3
-    alignment = 0.1
-    cohesion = 0.5
-    separation = 0.5
+    alignment = 0.05
+    cohesion = 2
+    separation = 0.3
     boundary_force = 10
     boundary_margin = 15
     app = BoidApp(
-        500,
+        30,
         bound_min,
         bound_max,
         perception_radius,

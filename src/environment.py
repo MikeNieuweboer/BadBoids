@@ -132,8 +132,7 @@ class Environment:
             return np.zeros(3)
 
         avg_velocity = np.mean(velocities, axis=0)
-        direction = avg_velocity - self.boids[boid_index].velocity
-        return direction * self.weights.get("alignment", 0.0)
+        return avg_velocity * self.weights.get("alignment", 0.0)
 
     # ------------------------------------------------------------------
     # Boundary force (unchanged, but index-based)
