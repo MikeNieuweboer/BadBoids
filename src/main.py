@@ -75,7 +75,7 @@ if __name__ == "__main__":
     boundary_force = 10
     boundary_margin = 15
     app = BoidApp(
-        30,
+        300,
         bound_min,
         bound_max,
         perception_radius,
